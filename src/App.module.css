@@ -1,0 +1,79 @@
+.App {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30rem;
+	height: 20rem;
+	justify-content: space-evenly;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.error {
+	width: 500px;
+	font-size: 15px;
+	color: #e7f924;
+	margin: 0;
+	padding: 0;
+}
+
+.runLineTop {
+	letter-spacing: 10px;
+	margin-top: 10px;
+	font-size: 100px;
+	color: #ffffff40;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	animation: scrollTop 7s linear 1s infinite;
+}
+
+.runLineBot {
+	letter-spacing: 10px;
+	margin-top: 10px;
+	font-size: 100px;
+	color: #ffffff40;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	animation: scrollBot 7s linear 1s infinite;
+}
+
+@keyframes scrollTop {
+	from {
+		transform: translateX(115%);
+		transform-origin: left center;
+	}
+	to {
+		transform: translateX(-115%);
+		transform-origin: right center;
+	}
+}
+
+@keyframes scrollBot {
+	from {
+		transform: translateX(-115%);
+		transform-origin: left center;
+	}
+	to {
+		transform: translateX(115%);
+		transform-origin: right center;
+	}
+}
+
+.button {
+	width: 10rem;
+	height: 3rem;
+	border-radius: 5px;
+	border: none;
+	background: linear-gradient(195deg, rgba(0, 247, 153, 0.719), #115cb3a0);
+	color: #ffffffaf;
+	font-weight: 600;
+}
+
+.button:disabled {
+	background-color: transparent;
+}

@@ -1,0 +1,30 @@
+.input {
+	margin-bottom: 10px;
+	padding: 2px 0;
+	background-repeat: no-repeat;
+	background-position: 5px;
+	background-size: 20px 20px;
+	width: 30rem;
+	height: 3rem;
+	background-color: #12457fa0;
+	border: 2px solid #488de7d1;
+	border-radius: 5px;
+	color: mediumaquamarine;
+	font-size: 15px;
+	padding-left: 30px;
+	letter-spacing: 1px;
+}
+
+.input::placeholder {
+	color: #488de7d1;
+	font-weight: 200;
+	margin-left: 10px;
+}
+
+.input[type='email'] {
+	background-image: url(../../../public/email.png);
+}
+
+.input[type='password'] {
+	background-image: url(../../../public/password.png);
+}
